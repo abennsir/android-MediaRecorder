@@ -191,7 +191,7 @@ public class MainActivity extends Activity {
         }
         mMediaRecorder.setOutputFile(mOutputFile.getPath());
         // END_INCLUDE (configure_media_recorder)
-
+	    mMediaRecorder.setOrientationHint(180);
         // Step 5: Prepare configured MediaRecorder
         try {
             mMediaRecorder.prepare();
